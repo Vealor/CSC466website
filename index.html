@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>TCP vs QUIC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<p id="logo">A Comparison of Network Protocols</p>
+					</div>
+				</div>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#timeline">Timeline</a></li>
+					<li><a href="#worklog">Worklog</a></li>
+				</ul>
+			</nav>
+
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<section id="banner">
+						<h2>TCP vs QUIC</h2>
+						<p>Carl Masri, Jakob Roberts, Kjalen Hansen</p>
+						<!-- <a href="#" class="button">Alright let's go</a> -->
+					</section>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row 200%">
+							<div class="12u" id="about">
+									<section class="box features">
+										<h2 class="major"><span>ABOUT</span></h2>
+										<p>
+											QUIC is a new transport layer protocol built by
+											Google that aims to provide the guaranteed transport layer
+											service of TCP with lower overhead and latency. QUIC is built
+											entirely upon UDP which allows flexibility in implementation,
+											as UDP is lightweight and very low overhead. Google maintains
+											that there are many performance benefits of using UDP instead
+											of TCP, including reduced connection time, improved congestion
+											control, and forward error correction. This project aims to test
+											these claims by comparing the QUIC protocol against TCP
+											and UDP on a number of quantitative metrics by use of a
+											purpose built server-client architecture. The security aspects will
+											be examined with respect to impact on protocol and resistance
+											to some basic attacks in a comparative analysis with current
+											protocols.
+										</p>
+									</section>
+									<ul class="actions">
+										<li><a href="assets/QUIC_Proposal.pdf" class="button alt big">Get the Proposal</a></li>
+									</ul>
+
+							</div>
+						</div>
+
+						<div class="row 200%">
+							<div class="12u" id="timeline">
+									<section class="box blog">
+										<h2 class="major"><span>Timeline</span></h2>
+										<div>
+											<div class="row">
+												<div class="3u 0u(mobile)"></div>
+												<div class="6u 12u(mobile)">
+													<div class="sidebar">
+															<ul class="divided">
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="10u">
+																				<h3>Build QUIC runtime and testing environment.</h3>
+																				<ul class="meta">
+																					<li>Feb 13, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="2u">
+																				<i class="fa fa-check-circle-o fa-3x" aria-hidden="true" style="color:green"></i>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="10u">
+																				<h3>Begin performance analysis.</h3>
+																				<ul class="meta">
+																					<li>Feb 27, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="2u">
+																				<i class="fa fa-refresh fa-3x" aria-hidden="true" style="color:yellow"></i>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="10u">
+																				<h3>Finalize results.</h3>
+																				<ul class="meta">
+																					<li>Mar 13, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="2u">
+																				<i class="fa fa-times-circle-o fa-3x" aria-hidden="true" style="color:red"></i>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="10u">
+																				<h3>Begin final report & presentation	preparation.</h3>
+																				<ul class="meta">
+																					<li>Feb 27, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="2u">
+																				<i class="fa fa-times-circle-o fa-3x" aria-hidden="true" style="color:red"></i>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="10u">
+																				<h3>Final edits and report submission.</h3>
+																				<ul class="meta">
+																					<li>Apr 10, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="2u">
+																				<i class="fa fa-times-circle-o fa-3x" aria-hidden="true" style="color:red"></i>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+															</ul>
+
+													</div>
+												</div>
+												<div class="3u 0u(mobile)"></div>
+											</div>
+										</div>
+									</section>
+							</div>
+						</div>
+
+
+
+						<div class="row 200%">
+							<div class="12u" id="worklog">
+									<section class="box blog">
+										<h2 class="major"><span>WORKLOG</span></h2>
+										<div>
+											<div class="row">
+												<div class="12u 12u(mobile)">
+													<div class="sidebar">
+															<ul class="divided">
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="3u">
+																				<h3>Collect and review published academic work comparing QUIC and TCP</h3>
+																				<ul class="meta">
+																					<li>Carl Masri</li>
+																					<li>Feb 15, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="9u">
+																				<ul style="list-style-type:disc">
+																					<li><p>Official QUIC docs<br> <a href="https://docs.google.com/document/d/1RNHkx_VvKWyWg6Lr8SZ-saqsQx7rFV-ev2jRFUoVD34/edit">https://docs.google.com/document/d/1RNHkx_VvKWyWg6Lr8SZ-saqsQx7rFV-ev2jRFUoVD34/edit</a></p></li>
+																					<li><p>P. Megyesi et al: How Quick is QUIC?<br> <a href="https://www.researchgate.net/publication/302585207">https://www.researchgate.net/publication/302585207</a></p></li>
+																					<li><p>R. Lychev et al: How Secure and Quick is QUIC? Provable Security and Performance Analyses<br> <a href="http://www.cc.gatech.edu/~aboldyre/papers/quic.pdf">http://www.cc.gatech.edu/~aboldyre/papers/quic.pdf</a></p></li>
+																					<li><p>Great slideshow presentation on QUIC<br> <a href="https://www.nanog.org/sites/default/files/meetings/NANOG64/1051/20150603_Rogan_Quic_Next_Generation_v1.pdf">https://www.nanog.org/sites/default/files/meetings/NANOG64/1051/20150603_Rogan_Quic_Next_Generation_v1.pdf</a></p></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="3u">
+																				<h3>Continue collecting and reviewing existing research</h3>
+																				<ul class="meta">
+																					<li>Carl Masri</li>
+																					<li>Feb 22, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="9u">
+																				<ul style="list-style-type:disc">
+																					<li><p>G. Carlucci et al: HTTP over UDP: an Experimental Investigation of QUIC<br> <a href="http://dl.acm.org.ezproxy.library.uvic.ca/citation.cfm?id=2695706">http://dl.acm.org.ezproxy.library.uvic.ca/citation.cfm?id=2695706</a></p></li>
+																					<li><p>A. Alshammari & A. Al-Mogren: HTTP/2 in Modern Web and Mobile Sensing-based Applications Analysis, Benchmarks and Current Issues<br> <a href="https://www.omicsgroup.org/journals/seqsplithttp2-in-modern-web-and-mobile-sensingbased-applicationsanalysisbenchmarks-and-current-issues-2332-0796-1000193.pdf">https://www.omicsgroup.org/journals/seqsplithttp2-in-modern-web-and-mobile-sensingbased-applicationsanalysisbenchmarks-and-current-issues-2332-0796-1000193.pdf</a></p></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="3u">
+																				<h3>Begin looking at how to set up the mock client/server infrastructure to test TCP, QUIC, and UDP</h3>
+																				<ul class="meta">
+																					<li>Carl Masri</li>
+																					<li>Feb 26, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="9u">
+																				<ul style="list-style-type:disc">
+																					<li><p><strong>Chromium:</strong> Building QUIC toy client/server from the Chromium code base (requires min 8GB RAM and 100+GB storage, probably not a great option)<br> <a href="https://www.chromium.org/quic/playing-with-quic">https://www.chromium.org/quic/playing-with-quic</a></p></li>
+																					<li><p><strong>Proto-QUIC:</strong> Cross platform library containing just the subset of Chromium code (and dependencies) needed to run QUIC<br> <a href="https://github.com/google/proto-quic">https://github.com/google/proto-quic</a></p></li>
+																					<li><p><strong>Libquic:</strong> Similar to above, but with some optimizations<br> <a href="https://github.com/devsisters/libquic">https://github.com/devsisters/libquic</a></p></li>
+																					<li><p>Proto-quic offers a discrete network simulator for the testing of congestion control:<br> <a href="https://github.com/google/proto-quic/tree/master/src/net/quic/test_tools/simulator">https://github.com/google/proto-quic/tree/master/src/net/quic/test_tools/simulator</a></p></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+
+																<li>
+																	<article class="box post-summary">
+																		<div class="row">
+																			<div class="3u">
+																				<h3>Website Creation</h3>
+																				<ul class="meta">
+																					<li>Jakob Roberts</li>
+																					<li>Feb 26, 2017</li>
+																				</ul>
+																			</div>
+																			<div class="9u">
+																				<ul style="list-style-type:disc">
+																					<li><p>Website hosting<br> <a href="http://csc466.jakobr.me">http://csc466.jakobr.me</a><br><a href="https://github.com/Vealor/CSC466website">https://github.com/Vealor/CSC466website</a></p></li>
+																					</ul>
+																			</div>
+																		</div>
+																	</article>
+																</li>
+															</ul>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<footer id="footer" class="container">
+					<!-- Contact -->
+					<div class="row 200%">
+						<div class="12u">
+								<section>
+									<h2 class="major"><span>Get in touch</span></h2>
+									<ul class="contact">
+										<li><a class="icon fa-envelope-o" href="mailto:jakobr@uvic.ca"><span class="label">E-Mail</span></a></li>
+									</ul>
+								</section>
+						</div>
+					</div>
+
+					<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Carl Masri, Jakob Roberts, Kjalen Hansen - All rights reserved</li>
+						</ul>
+					</div>
+					<br><br><br><br><br><br><br><br><br>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
